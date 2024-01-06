@@ -4,10 +4,6 @@ export const FETCH_RES_URL =
 export const FETCH_RES_DETAILS_URL =
   'https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D28.6696613%26lng%3D77.0568756%26restaurantId%3D';
 
-//corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D28.6696613%26lng%3D77.0568756%26restaurantId%3D26414%26catalog_qa%3Dundefined%26submitAction%3DENTER
-
-// https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D28.6696613%26lng%3D77.0568756%26restaurantId%3D585246%26catalog_qa%3Dundefined%26submitAction%3DENTER
-
 export const FETCH_RES_DETAILS_URL_MOBILE =
   'https://corsproxy.org/?https%3A%2F%2Fwww.swiggy.com%2Fdapi%2Fmenu%2Fpl%3Fpage-type%3DREGULAR_MENU%26complete-menu%3Dtrue%26lat%3D28.6696613%26lng%3D77.0568756%26restaurantId%3D';
 
