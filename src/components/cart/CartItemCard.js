@@ -20,9 +20,9 @@ const CartItemCard = ({ id, name, price, description, imageId }) => {
       <div className='w-9/12 p-2'>
         <h3 className='font-bold'>{name}</h3>
         <h3>₹ {priceString?.slice(0, -2)}</h3>
-        <h3 className='text-xs hidden md:block text-gray-600 flex-wrap'>
+        {/* <h3 className='text-xs hidden md:block text-gray-600 flex-wrap'>
           {description}
-        </h3>
+        </h3> */}
       </div>
       <div className='p-3 my-auto'>
         <button onClick={() => dispatch(removeItem(id))}>❌</button>

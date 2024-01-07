@@ -21,8 +21,12 @@ const useRestaurantDetails = (id) => {
           const json = await data.json();
           setRestaurants(json?.data?.cards[0].card.card.info);
           setRecommendations(
-            json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
+            json?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
               ?.card?.card?.itemCards || [] // Provide an empty array as a default if recommendations are not available
+          );
+          console.log(
+            json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
+              ?.card?.card?.itemCards
           );
         } else {
           const data = await fetch(FETCH_RES_DETAILS_URL + id);

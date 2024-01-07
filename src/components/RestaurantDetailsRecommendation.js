@@ -4,6 +4,7 @@ import { addItem } from '../utils/cartSlice';
 import { RECOMMENDATION_ITEM_IMG_CDN_URL } from '../constants';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import placeholderImage from '../assets/placeholder_img.jpg';
 
 const RestaurantDetailsRecommendation = ({
   recommendation,
@@ -32,7 +33,11 @@ const RestaurantDetailsRecommendation = ({
       <div className='sm:w-2/12 relative'>
         <img
           className='h-24 w-24  object-cover rounded-xl border z-0'
-          src={RECOMMENDATION_ITEM_IMG_CDN_URL + imageId}
+          src={
+            imageId
+              ? RECOMMENDATION_ITEM_IMG_CDN_URL + imageId
+              : placeholderImage
+          }
           loading='lazy'
           alt='img'
         />
