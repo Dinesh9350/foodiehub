@@ -1,4 +1,4 @@
-export const RESTAURANT_DETAILS_DATA = {
+export const RESTAURANT_DETAILS_RECOMMENDATION_DATA = {
   statusCode: 0,
   data: {
     statusMessage: 'done successfully',
