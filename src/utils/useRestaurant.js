@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FETCH_RES_URL } from '../constants';
-import { RESTAURANT_DATA } from '../components/mocks/data';
+import { RESTAURANT_DATA } from '../components/mocks/restaurantsData';
 
 const useRestaurant = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -13,20 +13,20 @@ const useRestaurant = () => {
       const json = await data.json();
       if (window.innerWidth < 1024) {
         setRestaurants(
-          RESTAURANT_DATA?.data?.cards[5]?.card?.card?.gridElements
+          RESTAURANT_DATA?.data?.cards[4]?.card?.card?.gridElements
             ?.infoWithStyle?.restaurants
         );
         setFilteredRestaurants(
-          RESTAURANT_DATA?.data?.cards[5]?.card?.card?.gridElements
+          RESTAURANT_DATA?.data?.cards[4]?.card?.card?.gridElements
             ?.infoWithStyle?.restaurants
         );
       } else {
         setRestaurants(
-          json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+          json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants
         );
         setFilteredRestaurants(
-          json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+          json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants
         );
       }

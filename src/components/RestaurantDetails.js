@@ -9,7 +9,7 @@ const RestaurantDetails = () => {
   const { id } = useParams();
   const { restaurants, recommendations } = useRestaurantDetails(id);
 
-  if (restaurants?.length === 0) {
+  if (!restaurants || !restaurants.id) {
     return (
       <div className='mt-10'>
         <ShimmerDetails />

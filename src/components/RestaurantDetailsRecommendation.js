@@ -47,7 +47,7 @@ const RestaurantDetailsRecommendation = ({
         >
           ADD
         </button>
-        <ToastContainer autoClose={200} />
+        <ToastContainer autoClose={500} />
       </div>
     </div>
   );

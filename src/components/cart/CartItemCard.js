@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeItem } from '../../utils/cartSlice';
 import { RECOMMENDATION_ITEM_IMG_CDN_URL } from '../../constants';
+import placeholderimg from '../../assets/placeholder_img.jpg';
 
 const CartItemCard = ({ id, name, price, description, imageId }) => {
   const dispatch = useDispatch();
@@ -12,7 +13,9 @@ const CartItemCard = ({ id, name, price, description, imageId }) => {
       <div className='sm:w-2/12'>
         <img
           className='h-24 w-24  object-cover rounded-xl border z-0'
-          src={RECOMMENDATION_ITEM_IMG_CDN_URL + imageId}
+          src={
+            imageId ? RECOMMENDATION_ITEM_IMG_CDN_URL + imageId : placeholderimg
+          }
           loading='lazy'
           alt='img'
         />
