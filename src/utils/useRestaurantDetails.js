@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
-import {
-  FETCH_RES_DETAILS_URL,
-  FETCH_RES_DETAILS_URL_MOBILE,
-} from '../constants';
+import { FETCH_RES_DETAILS_URL } from '../constants';
 import { RESTAURANT_DETAILS_DATA } from '../components/mocks/restaurantDetailsData';
 
 const useRestaurantDetails = (id) => {
