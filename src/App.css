@@ -63,3 +63,7 @@
 .end {
       width: 40%;
 }
+
+.darkmode-toggle {
+    z-index: 1;
+}

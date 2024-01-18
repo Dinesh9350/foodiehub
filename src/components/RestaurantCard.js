@@ -10,9 +10,9 @@ const RestaurantCard = ({
 }) => {
   return (
     <div className='border w-64 h-64 border-gray-300 rounded-xl m-3 '>
-    {/* ease-in-out duration-300  hover:scale-95 */}
+      {/* ease-in-out duration-300  hover:scale-95 */}
       <img
-        className='w-64 h-40 object-cover rounded-xl'
+        className='w-64 h-40 object-cover rounded-xl '
         loading='lazy'
         src={IMG_CDN_URL + cloudinaryImageId}
         alt='img'
