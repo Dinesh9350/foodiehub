@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
+import NavbarDefault from './NavbarDefault';
 
 const Header = () => {
   return (
     <>
-      <Navbar />
+      <NavbarDefault />
     </>
   );
 };

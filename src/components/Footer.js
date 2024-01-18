@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='flex  flex-wrap justify-center bg-black text-white p-5 pt-10 pb-16 space-x-10 sm:space-x-40'>
+    <div className='flex  flex-wrap justify-center p-5 pt-10 pb-16 space-x-10 sm:space-x-40'>
       <div className=''>
         <h2 className='text-xl font-bold pb-1'>FoodieHub</h2>
         <h3 className='py-1'>© 2023 FoodTech Pvt. Ltd</h3>
