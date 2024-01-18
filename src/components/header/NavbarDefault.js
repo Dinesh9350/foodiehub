@@ -76,7 +76,7 @@ function NavbarDefault() {
         className='flex items-center gap-x-2 p-1 font-medium'
       >
         <li class='font-sans block lg:inline-block lg:mt-0 lg:ml-6 align-middle text-black hover:text-gray-700'>
-          <Link href='#' role='button' class='relative flex'>
+          <Link to='/cart' role='button' class='relative flex'>
             <svg
               class='flex-1 w-7 h-7 fill-current text-white'
               viewbox='0 0 24 24'
