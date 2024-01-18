@@ -45,7 +45,7 @@ function NavbarDefault() {
           Help
         </Link>
       </Typography>
-      <Typography
+      {/* <Typography
         as='li'
         variant='small'
         color='blue-gray'
@@ -68,7 +68,7 @@ function NavbarDefault() {
         <Link to='/offers' className='flex items-center'>
           Offers
         </Link>
-      </Typography>
+      </Typography> */}
       <Typography
         as='li'
         variant='small'

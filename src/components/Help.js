@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const Section = ({ name, description, isVisible, setIsVisible }) => {
   return (
-    <div className='border border-y-gray-400 p-3 m-5 '>
-      <div className='flex justify-between items-center'>
+    <div className=' border border-y-gray-400 p-3 m-5 w-8/12 mx-auto'>
+      <div className='flex justify-center items-center'>
         <button
           className='text-lg font-semibold '
           onClick={() => setIsVisible(true)}
