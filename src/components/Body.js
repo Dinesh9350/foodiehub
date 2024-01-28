@@ -50,8 +50,11 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className='flex flex-wrap justify-center	m-5 '>
-        {filteredRestaurants?.map((restaurant, index) => {
+      <div
+       
+        className='flex flex-wrap justify-center	m-5 '
+      >
+        {filteredRestaurants?.map((restaurant) => {
           return (
             <Link
               to={'/restaurant/' + restaurant?.info?.id}
