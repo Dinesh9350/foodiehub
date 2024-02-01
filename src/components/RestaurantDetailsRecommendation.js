@@ -22,11 +22,7 @@ const RestaurantDetailsRecommendation = ({
     });
   };
   return (
-    <div
-      data-aos='fade-up'
-      data-aos-offset='0'
-      className='flex items-center justify-between my-3 border rounded-xl p-2'
-    >
+    <div className='flex items-center justify-between my-3 border rounded-xl p-2'>
       <div className='w-9/12'>
         <h3 className='font-bold'>{name}</h3>
         <h3>₹ {priceString?.slice(0, -2)}</h3>
