@@ -10,8 +10,7 @@ const RestaurantCard = ({
 }) => {
   return (
     <div
-      data-aos='fade-up'
-      data-aos-offset='0'
+     
       className='border w-64 h-64 border-gray-300 rounded-xl m-3'
     >
       {/* ease-in-out duration-300  hover:scale-95 */}
