@@ -6,6 +6,7 @@ import useRestaurant from '../utils/useRestaurant';
 import useOnline from '../utils/useOnline';
 import Offline from './Offline';
 
+
 const Body = () => {
   const [searchText, setSearchText] = useState('');
   const { restaurants, filteredRestaurants, setFilteredRestaurants } =
@@ -18,13 +19,28 @@ const Body = () => {
 
   if (filteredRestaurants?.length === 0) {
     return (
+      <>
+        <div className='text-center'>
+        <h3 className='font-bold'>
+          Please install{' '}
+         
+          <a
+            target='blank'
+            href='https://chromewebstore.google.com/detail/ultrasurf-security-privac/mjnbclmflcpookeapghfhapeffmpodij'
+          >
+            VPN extension to run the website!
+          </a>{' '}
+        </h3>
+      </div>
       <div className='mt-20 mb-3'>
         <Shimmer />
       </div>
+      </>
     );
   }
   return (
     <div className='mx-10 '>
+      
       <div className='flex justify-center my-5'>
         <input
           className='rounded-full px-4 py-1 mr-2'
@@ -50,10 +66,9 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div
-       
-        className='flex flex-wrap justify-center	m-5 '
-      >
+      
+      
+      <div className='flex flex-wrap justify-center	m-6 '>
         {filteredRestaurants?.map((restaurant) => {
           return (
             <Link

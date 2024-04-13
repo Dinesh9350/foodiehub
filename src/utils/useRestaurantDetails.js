@@ -5,8 +5,10 @@ import { RESTAURANT_DETAILS_RECOMMENDATION_DATA } from '../components/mocks/rest
 const useRestaurantDetails = (id) => {
   const [restaurants, setRestaurants] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
     const fetchData = async () => {
       try {
         if (window.innerWidth < 500) {
@@ -19,6 +21,12 @@ const useRestaurantDetails = (id) => {
               ?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards || [] // Provide an empty array as a default if recommendations are not available
           );
           console.log(
+            'setRestaurants RESTAURANT_DETAILS_RECOMMENDATION_DATA',
+            RESTAURANT_DETAILS_RECOMMENDATION_DATA?.data?.cards[0].card.card
+              .info
+          );
+          console.log(
+            'setRecommendations RESTAURANT_DETAILS_RECOMMENDATION_DATA',
             RESTAURANT_DETAILS_RECOMMENDATION_DATA?.data?.cards[2]?.groupedCard
               ?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards
           );
@@ -36,7 +44,12 @@ const useRestaurantDetails = (id) => {
               ?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards || [] // Provide an empty array as a default if recommendations are not available
           );
           console.log(
-            RESTAURANT_DETAILS_RECOMMENDATION_DATA?.data?.cards[4]?.groupedCard
+            'setRestaurants RESTAURANT_DETAILS_RECOMMENDATION_DATA',
+            json?.data?.cards[2].card.card.info
+          );
+          console.log(
+            ' setRecommendations RESTAURANT_DETAILS_RECOMMENDATION_DATA',
+            RESTAURANT_DETAILS_RECOMMENDATION_DATA?.data?.cards[2]?.groupedCard
               ?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards
           );
         } else {
@@ -49,13 +62,15 @@ const useRestaurantDetails = (id) => {
           const json = await data.json();
 
           setRestaurants(json?.data?.cards[2].card.card.info);
-          console.log("json?.data?.cards[2].card.card.info", json?.data?.cards[2].card.card.info
-          );
+          console.log('setRestaurants', json?.data?.cards[2].card.card.info);
           setRecommendations(
             json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
               ?.card?.card?.itemCards || [] // Provide an empty array as a default if recommendations are not available
           );
-          console.log("json?.data?.cards[2]?.groupedCard?", json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
+
+          console.log(
+            'setRecommendations',
+            json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]
               ?.card?.card?.itemCards
           );
         }

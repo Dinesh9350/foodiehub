@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
+    
     AOS.init({
       duration: 1000,
       easing: 'ease-in-sine',
@@ -22,6 +23,7 @@ function App() {
     <Provider store={store}>
       <div className='App'>
         <Header />
+        
         <Outlet />
         <hr />
         <Footer />
