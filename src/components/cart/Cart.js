@@ -16,7 +16,7 @@ const Cart = () => {
     .reduce((total, cartItem) => total + (cartItem ? cartItem.price : 0), 0)
     .toString()
     .slice(0, -2);
-  const discount = (price * 0.1).toString().slice(0, -2);
+  const discount = Math.floor(price * 0.1);
   const delivery = 99;
   const totalPrice = price - discount + delivery;
 
@@ -129,7 +129,7 @@ const Cart = () => {
           <div className='flex'>
             <div className='mr-5'>
               <h3>Price ({cartItems.length} item)</h3>
-              <h3>Discount</h3>
+              <h3>Discount (10%)</h3>
               <h3>Delivery Charges</h3>
               <h3 className='font-bold'>Total Amount</h3>
             </div>
